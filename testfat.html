@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function bodyFatBtn() {
+      let heighT = document.getElementById("height").value;
+      let weighT = document.getElementById("weight").value;
+      let bodyFat = Math.floor(weighT / ((heighT / 100) * (heighT / 100)));
+
+      if (bodyFat > 20 && bodyFat < 25) {
+        bodytFatResult = "정상";
+      } else if (bodyFat > 25 && bodyFat < 29.9) {
+        bodytFatResult = "과체중";
+      } else if (bodyFat > 30 && bodyFat < 40) {
+        bodytFatResult = "비만";
+      } else if (bodyFat > 20 && bodyFat < 25) {
+        bodytFatResult = " 고도비만ddd";
+      }
+      
+      let disPlay = "당신의 BMI는 " + bodyFat + "\n" + bodytFatResult;
+      document.getElementById("result").innerHTML = disPlay;
+    }//end
+
+
+
+    </script>
+</head>
+<body>
+    <body>
+        <h1>77testfat.html addEventListener test</h1>
+        본인키입력 <input type="number" name="height" id="height" value="190" />
+        <br />
+        몸무게입력 <input type="number" name="weight" id="weight" value="100" />
+        <button id="btn" onclick="bodyFatBtn()">결과보기버튼</button>
+        <div id="result"></div>
+</body>
+</html>

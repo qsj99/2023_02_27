@@ -1,0 +1,26 @@
+02/27/월 
+
+jQuery
+
+$(document).ready( function(){코드기술});  //기본
+jQuery(document).ready(function(){ }); 
+
+
+$(document).ready( function(){
+ $('#btn2').click(function(){
+   var b= ('#numb').val()
+alert(b);
+  });
+
+});
+
+onclick = "location.reload()" 
+
+이벤트 click(), blur(), focus() 
+     mouseover(), mouseout()   ==> addClass(스타일)
+     keyup(), keydown(), keypress()
+
+
+05addClass477.html
+06removeClass479.html
+07toggleClass481.html
